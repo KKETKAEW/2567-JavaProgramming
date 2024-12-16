@@ -1,4 +1,4 @@
 StudentId:2413110095
 studentName:Ketkaew Jitman
-Date:12/9/2024
-Topic:String Method
+Date:12/16/2024
+Topic:Method
