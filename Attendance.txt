@@ -1,4 +1,4 @@
 StudentId:2413110095
 studentName:Ketkaew Jitman
-Date:1/20/2024
-Topic: Encapsulation Concept
+Date:2/10/2024
+Topic: Composition and Inheritance
