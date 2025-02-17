@@ -1,5 +1,5 @@
-import java.util.*;
-public class movieDemo {
+import java.util.Scanner;
+public class MovieDemo {
    public static void main(String[] args) {
        Scanner scan = new Scanner(System.in);
        System.out.print("Input movie id: ");
@@ -39,8 +39,8 @@ public class movieDemo {
            
            System.out.println("Please input 1 - 15 only!");
        }
-       Director director = new Director(direcName, direcEmail, direcGender);
-       Theater theater = new Theater(movieId, movieName, director, theaters);
+       director director = new director(direcName, direcEmail, direcGender);
+       theater theater = new theater(movieId, movieName, director, theaters);
        System.out.println(theater);
        
        

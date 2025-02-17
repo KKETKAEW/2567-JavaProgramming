@@ -1,13 +1,13 @@
 
-public class Theater extends Movie{
+public class theater extends movie{
 	 private int theaterNo;
-	   public Theater(String id, String name, Director director, int theaterNo) {
+	   public theater(String id, String name, director director, int theaterNo) {
 	       super(id, name, director);
 	       this.theaterNo = theaterNo;
 	   }
 	   
-	   public Theater() {
-	       super("", "", new Director("", "", ' '));
+	   public theater() {
+	       super("", "", new director("", "", ' '));
 	       this.theaterNo = 0;
 	   }
 	   public String getTheaterName() {

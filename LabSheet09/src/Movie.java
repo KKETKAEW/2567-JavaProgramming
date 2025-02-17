@@ -1,10 +1,10 @@
 
-public class Movie {
+public class movie {
 	private String id;
 	private String name;
-	private Director director;
+	private director director;
 	
-	public Movie(String id, String name,Director director) {
+	public movie(String id, String name,director director) {
 		this.id = id;
 		this.name = name;
 		this.director = director;
@@ -20,12 +20,12 @@ public class Movie {
 		
 	}
 	
-	public Director getDirector() {
+	public director getDirector() {
 		return this.director;
 		
 	}
 	
-	public void setDirector(Director director) {
+	public void setDirector(director director) {
 		this.director = director;
 		
 	}

@@ -1,15 +1,15 @@
-public class Director {
+public class director {
 	private String name;
 	private String email;
 	private char gender;
 	
-	public Director(String name, String email, char gender) {
+	public director(String name, String email, char gender) {
 		this.name= name;
 		this.email=email;
 		this.gender=gender;
 	}
 	
-	public Director(String name, String email) {
+	public director(String name, String email) {
 		this(name,email,' ');
 		
 	}
