@@ -25,9 +25,11 @@ public class Director {
 	public String getGenderName() {
 		if(gender=='m'||gender=='M') {
 			return "male";
-		}else if(gender=='f'||gender=='F') {
+		}
+		else if(gender=='f'||gender=='F') {
 			return "Female";
-		}else {
+		}
+		else {
 			return null;
 		}
 	}
