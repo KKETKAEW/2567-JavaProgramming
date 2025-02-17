@@ -1,4 +1,3 @@
-
 public class Director {
 	private String name;
 	private String email;
@@ -12,25 +11,31 @@ public class Director {
 	
 	public Director(String name, String email) {
 		this(name,email,' ');
+		
 	}
 	
 	public String getName() {
 		return this.name;
+		
 	}
 	
 	public String getEmail() {
 		return this.email;
+		
 	}
 	
 	public String getGenderName() {
 		if(gender=='m'||gender=='M') {
 			return "male";
+			
 		}
 		else if(gender=='f'||gender=='F') {
 			return "Female";
+			
 		}
 		else {
 			return null;
+			
 		}
 	}
 	
