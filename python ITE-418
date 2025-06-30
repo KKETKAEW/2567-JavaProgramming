@@ -1,0 +1,439 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO7PjLItCZ4I+Vs08LocjcU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/KKETKAEW/2567-JavaProgramming/blob/main/python%20ITE-418\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2HjOjTTfyqKY",
+        "outputId": "0b042bda-ef40-4318-e2b8-416817d28efd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "She said \"Hello\"\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('She said \"Hello\"')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Gunchai\"\n",
+        "surename = \"Gumnerdploy\"\n",
+        "nickname = \"Nhum\"\n",
+        "age = 54\n",
+        "height = 1.8\n",
+        "single = False"
+      ],
+      "metadata": {
+        "id": "YhLMWhrHz5jR"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"%s\"%(name))\n",
+        "print(surename)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_tiVsI5y0i8f",
+        "outputId": "5f1e5117-2991-46d3-c1a3-21d28e41fc1b"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Gunchai\n",
+            "Gumnerdploy\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#His name is_________\n",
+        "print(\"His name is %s\" %(name))\n",
+        "print(\"His name is {}\" .format(name))\n",
+        "print(\"His name is \"+name) # (+ เอาไว้ต่อ String)\n",
+        "print(\"His name is\",name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "76u1oZxZ1Bwp",
+        "outputId": "83335405-e11a-445e-a98b-beb23d4d7478"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "His name is Gunchai\n",
+            "His name is Gunchai\n",
+            "His name is Gunchai\n",
+            "His name is Gunchai\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#+ number\n",
+        "print(5+10)\n",
+        "#+ String\n",
+        "print(\"abc\"+\"123\")\n",
+        "# num+String = can not\n",
+        "#print(1+\"1\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ekRk7CM62zR5",
+        "outputId": "88318664-acbc-4512-d3e4-5175da413574"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15\n",
+            "abc123\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#input()\n",
+        "#message = input()\n",
+        "#print(\"Your message is \"+message)\n",
+        "\n",
+        "num1 = int(input(\"Please input a number : \")) # if didn't put \"int\" it is a String\n",
+        "num2 = int(input(\"Please input a number : \"))\n",
+        "print(num1+num2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4TgB0vYB3WKw",
+        "outputId": "4567c8b3-e21f-4f4f-fb44-a96f478567ff"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please input a number : 2\n",
+            "Please input a number : 3\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "feet = int(input(\"Enter your height (feet) : \"))\n",
+        "inches = int(input(\"Enter your height (inches) : \"))\n",
+        "cm = feet*30.48+inches*2.54\n",
+        "print(\"Your height in centimeters : \"+str(cm))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j43gzMNF59_T",
+        "outputId": "2c980211-909e-48e8-d7b1-7113cfd7d456"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your height (feet) : 5\n",
+            "Enter your height (inches) : 8\n",
+            "Your height in centimeters : 172.72\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "kg =  int(input(\"Enter your weight in kilograms : \"))\n",
+        "cm = int(input(\"Enter your height in centimeters : \"))\n",
+        "m = cm/100\n",
+        "bmi = kg/(m*m)\n",
+        "print (\"Your BMI is: \"+str(bmi))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4as4E39-84ZB",
+        "outputId": "29835763-076e-4fc0-b9b8-35ce638e5355"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your weight in kilograms : 70\n",
+            "Enter your height in centimeters : 172\n",
+            "Your BMI is: 23.661438615467823\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "weight = int(input(\"Enter your weight in kilograms: \"))\n",
+        "height = int(input(\"Enter your height in centimeters: \"))\n",
+        "bmi = weight/((height/100)**2)\n",
+        "print (\"Your BMI is: \" ,bmi)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0DeXLBqsBJS8",
+        "outputId": "d0b930b7-7575-489e-ffd4-e7433cdb3009"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your weight in kilograms: 70\n",
+            "Enter your height in centimeters: 172\n",
+            "Your BMI is:  23.661438615467823\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = float(input(\"Input number : \"))\n",
+        "print (\"Rounded number is \"+str(round(num)))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yX4M2J3Z_NG5",
+        "outputId": "7348e3f2-4ddf-4fbb-e3dc-88bfab378a2d"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Input number : 1.2\n",
+            "Rounded number is 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = float(input(\"Input number : \"))\n",
+        "num = int(num+0.5)\n",
+        "print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K9nybOrmAYIR",
+        "outputId": "dd7c383f-4185-45dd-bbf7-a169f745184b"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Input number : 1.9\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id= int(input(\"Student id :\"))\n",
+        "id12=id//100000000\n",
+        "id45=id//100000%100\n",
+        "print(\"Digit 1-2 = \",id12)\n",
+        "print (\"Digit 4-5 = \",id45)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_jE7gK1RBeOB",
+        "outputId": "b0bb409c-eb70-4651-acad-2a45d92f53e4"
+      },
+      "execution_count": 55,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Student id :2413110095\n",
+            "Digit 1-2 =  24\n",
+            "Digit 4-5 =  31\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter an integer: \"))\n",
+        "if num%2==1:\n",
+        "  print(\"The number is odd\")\n",
+        "else:\n",
+        "  print(\"The number is even\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ERk-iGgPG2r6",
+        "outputId": "2405413b-ef1e-4546-b315-37187422cc1c"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter an integer: 2\n",
+            "The number is even\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"Enter your score (0-100): \"))\n",
+        "if score >= 80:\n",
+        "  print(\"A\")\n",
+        "elif score >= 70:\n",
+        "  print(\"B\")\n",
+        "elif score >= 60:\n",
+        "  print(\"C\")\n",
+        "elif score >= 50:\n",
+        "  print(\" D\")\n",
+        "else:\n",
+        "  print(\"F\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QqLTBcboIHHr",
+        "outputId": "86f18f42-d109-4335-c9cb-0392696c2e29"
+      },
+      "execution_count": 59,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your score (0-100): 74\n",
+            "B\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = int(input(\"Enter a year: \"))\n",
+        "if year%4==0 and year%100!=0 or year%400==0:\n",
+        "      print(\"a leap year\")\n",
+        "else:\n",
+        "    print(\"not a leap year\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jTvn10BUJUBC",
+        "outputId": "d6e61581-8555-4214-e72a-4bbb9d5c520b"
+      },
+      "execution_count": 86,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a year: 1900\n",
+            "not a leap year\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
